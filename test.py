@@ -1,12 +1,10 @@
-import os
 import argparse
-import pickle as pk
 import numpy as np
 import matplotlib.pyplot as plt
 import torch
 import torch.nn as nn
 
-from gcns import GCNS
+from gcns import GCNS1,GCNS2
 from dbgcn_utils import generate_dataset, load_data, get_normalized_adj
 
 use_gpu = False
