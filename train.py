@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import torch
 import torch.nn as nn
 
-from gcns import GCNS,GCNS2
+from gcns import GCNS1,GCNS2
 from dbgcn_utils import generate_dataset, load_data, get_normalized_adj
 
 use_gpu = False
