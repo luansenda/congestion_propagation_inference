@@ -67,7 +67,7 @@ class GCNBlock2(nn.Module):
         #return t2
 
 
-class GCNS(nn.Module):
+class GCNS1(nn.Module):
     def __init__(self, num_nodes, num_features, num_timesteps_input,num_timesteps_output):
         super(GCNS, self).__init__()
         self.block1 = GCNBlock(in_channels=num_features, out_channels=64,
