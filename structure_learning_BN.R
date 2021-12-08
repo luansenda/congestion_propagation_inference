@@ -5,7 +5,6 @@ library(openxlsx)
 sp <- read.csv("C:\\Users\\g\\Desktop\\anomaly tree\\speed_data\\net_2.csv")
 
 ## -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# structure learning -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
-
 dt_train <- sp[0:540,]
 dt_val <- sp[541:1080,]
 
@@ -27,7 +26,6 @@ plot_dynamic_network(net)
 ## -#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-# Parameters learning -#-#-#-#-#-#-#-#-#-#-#-#-
 f_dt_train <- fold_dt(dt_train, size)
 fit <- fit_dbn_params(net, f_dt_train, method = "mle")
-
 
 ## -------- Conditional density save ---------------------
 weigh_num = 0
