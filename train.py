@@ -85,7 +85,7 @@ if __name__ == '__main__':
 
     A_wave = A_wave.to(device=args.device)
 
-    net = GCNS(A_wave.shape[0],
+    net = GCNS1(A_wave.shape[0],
                training_input.shape[3],
                num_timesteps_input,
                num_timesteps_output).to(device=args.device)
