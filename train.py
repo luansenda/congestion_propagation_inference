@@ -82,9 +82,9 @@ if __name__ == '__main__':
 
     A_wave = get_normalized_adj(A, args.mat_flag)
     A_wave = torch.from_numpy(A_wave)
-
     A_wave = A_wave.to(device=args.device)
-
+    
+    ## Try using a different GCN structure, GCNS1 or GCNS2 or GCNS3 or GCNS4
     net = GCNS1(A_wave.shape[0],
                training_input.shape[3],
                num_timesteps_input,
