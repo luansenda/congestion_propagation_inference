@@ -14,7 +14,7 @@ num_timesteps_output = 1
 epochs = 20
 batch_size = 36
 
-parser = argparse.ArgumentParser(description='STGCN')
+parser = argparse.ArgumentParser(description='DBGCN')
 parser.add_argument('--enable_cuda', action='store_true', help='Enable CUDA')
 parser.add_argument('--data',type=str,default='data/node_values16.npy',help='data path')
 parser.add_argument('--adjdata',type=str,default='data/adj_mat16_lea.npy',help='adj data path')
